@@ -6,10 +6,10 @@ import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
-  { path: 'main', component: IndexComponent },
+  { path: '', component: IndexComponent },
   { path: 'projects', component: ProjectsComponent},
   { path: 'about', component: AboutComponent},
-  { path: '**', redirectTo: '/main', pathMatch: 'full'}
+  { path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 
 @NgModule({
